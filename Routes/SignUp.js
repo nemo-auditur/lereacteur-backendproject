@@ -27,8 +27,7 @@ router.post("/user/sign_up", async (req, res) => {
       }
     });
 
-    console.log("test");
-
+    console.log(user);
     await user.save();
     res.json(user);
 
@@ -44,7 +43,7 @@ router.post("/user/sign_up", async (req, res) => {
           account: user.account
         });
       }
-    }); */
+    });  */
   } catch (e) {
     res.console.error(e);
   }
